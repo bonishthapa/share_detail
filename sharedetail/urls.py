@@ -8,5 +8,5 @@ router.register('sharebrought', ShareBroughtAPIVIew, basename='share-brought')
 router.register('sharesold', ShareSoldAPIVIew, basename='share-sold')
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('share/', include(router.urls)),
 ]
