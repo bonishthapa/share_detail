@@ -8,3 +8,4 @@ from user.serializers import UserSerializer
 class UserAPIView(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
