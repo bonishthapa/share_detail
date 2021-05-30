@@ -9,7 +9,7 @@ class ShareBrought(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='brought_user')
     name = models.CharField(max_length=150, blank=True)
     quantity = models.IntegerField()
-    brought_rate = models.IntegerField()
+    brought_rate = models.FloatField()
     brought_date = models.DateField()
 
     @property
@@ -24,9 +24,9 @@ class ShareSold(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='sold_user')
     name = models.CharField(max_length=150, blank=True)
     quantity = models.IntegerField()
-    brought_rate = models.IntegerField()
+    brought_rate = models.FloatField()
     brought_date = models.DateField()
-    sold_rate = models.IntegerField()
+    sold_rate = models.FloatField()
     sold_date = models.DateField()
 
     @property
