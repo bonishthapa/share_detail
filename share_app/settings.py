@@ -94,23 +94,15 @@ WSGI_APPLICATION = 'share_app.wsgi.application'
 # }
 
 DATABASES = {
-
     'default': {
-
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-        'NAME': ‘depkk35eup12mj’,
-
+        'NAME': 'depkk35eup12mj',
         'USER': 'wcaxbvdvtnqogz',
-
         'PASSWORD': '529d833ddb5de5cc23d2a7c78e007692af17d7f4ae9fe48d6266ba1c8bde5578',
-
         'HOST': 'ec2-54-167-152-185.compute-1.amazonaws.com',
-
         'PORT': '5432',
 
     }
-
 }
 
 import dj_database_url
